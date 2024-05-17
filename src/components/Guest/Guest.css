@@ -1,0 +1,14 @@
+.example_d {
+  color: #534bb2 !important;
+  background: #ffffff;
+  border: 4px solid #534bb2 !important;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  font-family: "Quicksand", sans-serif;
+}
+.example_d:hover {
+  color: #508695 !important;
+  border-radius: 50px;
+  border-color: #508695 !important;
+  transition: all 0.3s ease 0s;
+}
