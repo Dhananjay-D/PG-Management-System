@@ -4,6 +4,8 @@ import { useFirebase } from "../../context/firebase";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
+
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -59,11 +61,12 @@ const Register = () => {
             onChange={(event) => setPassword(event.target.value)}
             className="register-input"
           />
-          <button type="submit" className="register-button">
+          <button type="submit" className="register-button" style={{marginBottom:"10px"}}>
             Register
           </button>
-          <ToastContainer />
+          Already have an account??<Link to="/login" > login</Link>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );

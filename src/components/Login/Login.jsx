@@ -4,6 +4,7 @@ import { useFirebase } from "../../context/firebase";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -30,7 +31,6 @@ const Login = () => {
         theme: "colored",
       });
 
-      // localStorage.setItem("user", JSON.stringify(result));
       navigate("/home");
       console.log(result);
     } catch (error) {
@@ -58,9 +58,14 @@ const Login = () => {
             onChange={(event) => setPassword(event.target.value)}
             className="login-input"
           />
-          <button type="submit" className="login-button">
+          <button
+            type="submit"
+            className="login-button"
+            style={{ marginBottom: "10px" }}
+          >
             Login
           </button>
+          Don't have an account??<Link to="/register"> register</Link>
         </form>
       </div>
       <ToastContainer />

@@ -4,14 +4,14 @@ const { Header, Content, Footer } = Layout;
 import Footers from "../Footer/Footer";
 import { Button, Flex } from "antd";
 import "./Guest.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Guest = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <Layout>
       <Header
@@ -40,7 +40,7 @@ const Guest = () => {
           style={{
             background: colorBgContainer,
             minHeight: 280,
-            margin: "50px 0",
+            margin: "65px 0",
             padding: 24,
             borderRadius: borderRadiusLG,
           }}
@@ -49,10 +49,16 @@ const Guest = () => {
             Effortless Management for Hassle-Free Stays
           </h2>
           <Flex gap="large" wrap justify="center">
-            <Button type="primary" size="large" onClick={()=>navigate("/register")}>
+            <Button
+              type="primary"
+              size="large"
+              onClick={() => navigate("/register")}
+            >
               Sign Up
             </Button>
-            <Button size="large" onClick={()=>navigate("/login")}>Login</Button>
+            <Button size="large" onClick={() => navigate("/login")}>
+              Login
+            </Button>
           </Flex>
         </div>
       </Content>

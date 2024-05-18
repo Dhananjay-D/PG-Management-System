@@ -1,7 +1,7 @@
 /* Login.css */
 .login-container {
   font-family: Arial, sans-serif;
-  background-color: #f0f2f5; /* Light gray background */
+  background-color: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .login-form {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -21,14 +21,14 @@
 .login-title {
   margin-bottom: 24px;
   font-size: 28px;
-  color: #333333; /* Dark gray text */
+  color: #333333;
   text-align: center;
 }
 
 .login-input {
   margin-bottom: 20px;
   padding: 14px 20px;
-  border: 1px solid #cccccc; /* Light gray border */
+  border: 1px solid #cccccc;
   border-radius: 8px;
   font-size: 16px;
   width: 90%;
@@ -36,7 +36,7 @@
 }
 
 .login-input:focus {
-  border-color: #007bff; /* Blue border when input focused */
+  border-color: #007bff;
   outline: none;
 }
 
@@ -45,8 +45,8 @@
   padding: 14px 20px;
   border: none;
   border-radius: 8px;
-  background-color: #007bff; /* Blue button background */
-  color: #ffffff; /* White text */
+  background-color: #007bff;
+  color: #ffffff;
   font-size: 16px;
   width: 100%;
   cursor: pointer;
@@ -54,5 +54,5 @@
 }
 
 .login-button:hover {
-  background-color: #0056b3; /* Darker blue on button hover */
+  background-color: #0056b3;
 }
